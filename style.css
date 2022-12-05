@@ -35,15 +35,32 @@
   .header__link:last-child {
     margin-right: 0;
   }
-
+body{
+  background: #555555;
+}
   form{
-
+    max-width: 400px;
+    background: rgb(175, 239, 239);
+    color: #030303;
+    padding:16px;
+    border: 9px solid rgb(245, 24, 24);
+    border-radius:12px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .form__row{
     margin-bottom: 24px;
+    width: 100%;
+    padding-left: 80px;;
+  }
+  .form__row>*{
+
   }
   .form__input{
-
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 3px solid red;
   }
   .form__label{
     display: block;
