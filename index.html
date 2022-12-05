@@ -5,69 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SVG</title>
-    <style>
-      .zadnji text {
-        fill: aquamarine;
-      }
-
-      h1 {
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1 style="color: red">naslov</h1>
-    <svg width="400" height="200">
-      <rect
-        width="200"
-        height="100"
-        x="100"
-        y="50"
-        fill="#F00"
-        stroke="#333"
-        stroke-width="2px"
-      />
-    </svg>
-    <hr />
+    <header>
 
-    <svg width="400" height="200">
-      <circle cx="200" cy="100" r="85" fill="#F00" />
-    </svg>
-    <hr />
+    </header>
+    <main>
+      <form action="" method="post" class="form">
+        <div class="form__row">
+          <label for="nameAndSurname" class="form__label">Ime i prezime</label>
+          <input type="text" name="nameAndSurname" id="nameAndSurname" class="form__input" required>
+        </div>
+        <div class="form__row">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" name="email" id="email" class="form__input" required>
+        </div>
+        <div class="form__row">
+          <label for="telephone" class="form__label">Telefon</label>
+          <input type="tel" name="telephone" id="telephone" class="form__input">
+        </div>
+        <div class="form__row">
+          <label for="password" class="form__label">Lozinka</label>
+          <input type="password" name="password" id="password" class="form__input">
+        </div>
+        <div class="form__row">
+          <label for="color" class="form__label">Boja</label>
+          <input type="color" name="color" id="color" class="form__input">
+        </div>
+        <div class="form__row">
+          <label for="color" class="form__label">Prijavi se na newsletter
+          <input type="checkbox" name="checkbox" id="checkbox" class="form__input"></label>
+        </div>
+        <div class="form__row">
+          <label for="radio1" class="form__label form__label_inline">1</label>
+            <input type="radio" name="radio" id="radio1" value="1" class="form__input">
+          <label for="radio1" class="form__label form__label_inline">2</label>
+            <input type="radio" name="radio" id="radio2" value="2" class="form__input">
+          <label for="radio3" class="form__label form__label_inline">3</label>
+            <input type="radio" name="radio" id="radio3" value="3" class="form__input">
+          <label for="radio4" class="form__label form__label_inline">4</label>
+            <input type="radio" name="radio" id="radio4" value="4" class="form__input">
+        </div>
+        <div class="form__row">
+          <label for="date" class="form__label">Datum</label>
+          <input type="date" name="date" id="date" class="form__input">
+        </div>
+        <div class="form__row">
+          <label for="Textarea" class="form__label">Textarea</label>
+            <Textarea cols="4" rows="8" id="Textarea"></Textarea>
+        </div>
+        <div class="form__row">
+          <label for="file1" class="form__label">Priloži datoteku</label>
+            <input type="file" name="file1" id="file1">
+        </div>
+        <div class="form__row">
+        <label for="cars">Odaberi seminar:</label>
 
-    <svg width="400" height="200">
-      <ellipse cx="200" cy="100" rx="185" ry="85" fill="#F00" />
-    </svg>
-    <hr />
+        <select name="cars" id="cars" class="form__label">
+          <option value="pariz">Pariz</option>
+          <option value="rim">Rim</option>
+          <option value="london">London</option>
+          <option value="zagreb">Zagreb</option>
+        </select>
+        </div>
+        <div class="form__row">
+          <label for="browsers" class="form__label">Odaberi browser:</label>
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+        </div>
+        <button>Pošalji</button>
+      </form>
+    </main>
+<footer>
 
-    <svg width="400" height="200">
-      <line x1="0" y1="0" x2="300" y2="200" stroke="#F00" stroke-width="3px" />
-    </svg>
-    <hr />
-
-    <svg width="400" height="200">
-      <polygon
-        points="200,20,380,180,20,180"
-        stroke="#F00"
-        stroke-width="3px"
-        fill="#EEE"
-      />
-    </svg>
-
-    <hr />
-    <svg width="400" height="200">
-      <polyline
-        points="20,20,60,20,60,40,100,40,100,60, 140,60,140,80"
-        stroke="#F00"
-        stroke-width="3px"
-        fill="none"
-      />
-    </svg>
-
-    <svg height="200" width="500" class="zadnji">
-      <text style="color: black" x="0" y="30" fill="red">Lorem ipsum</text>
-      <line x1="0" y1="38" x2="160" y2="38" stroke="#333" stroke-width="2px" />
-    </svg>
+</footer>
   </body>
 </html>
