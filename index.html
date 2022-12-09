@@ -4,93 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vježba 8</title>
+    <title>Index</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <header>
-
+      <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+      </nav>
     </header>
-    <main draggable="true">
-      <form action="" method="post" class="form">
-        <div class="form__row">
-          <label for="nameAndSurname" class="form__label">Ime i prezime</label>
-          <input type="text" name="nameAndSurname" id="nameAndSurname" class="form__input" required>
+    <main>
+      <section>
+        <h1>Parcijalni ispit</h1>
+      </section>
+      <section class="section1">
+        <h2>Naslov</h2>
+        <div>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi laborum perspiciatis laboriosam id nesciunt ipsam ex dicta commodi inventore facilis. Illum quae ullam eos mollitia dolor a deserunt officiis nihil.
         </div>
-        <div class="form__row">
-          <label for="email" class="form__label">Email</label>
-          <input type="email" name="email" id="email" class="form__input" required>
+      </section>
+      <section class="section2">
+        <h2>Cjenik</h2>
+        <div>
+          Imamo najbolje cijene na Balkanu.
         </div>
-        <div class="form__row">
-          <label for="telephone" class="form__label">Telefon</label>
-          <input type="tel" name="telephone" id="telephone" class="form__input">
-        </div>
-        <div class="form__row">
-          <label for="password" class="form__label">Lozinka</label>
-          <input type="password" name="password" id="password" class="form__input">
-        </div>
-        <div class="form__row">
-          <label for="color" class="form__label">Boja</label>
-          <input type="color" name="color" id="color" class="form__input">
-        </div>
-        <div class="form__row">
-          <label for="checkbox" class="form__label">Prijavi se na newsletter
-          <input type="checkbox" name="checkbox" id="checkbox" class="form__input"></label>
-        </div>
-        <div class="form__row">
-          <label for="radio1" class="form__label form__label_inline">1</label>
-            <input type="radio" name="radio" id="radio1" value="1" class="form__input">
-          <label for="radio1" class="form__label form__label_inline">2</label>
-            <input type="radio" name="radio" id="radio2" value="2" class="form__input">
-          <label for="radio3" class="form__label form__label_inline">3</label>
-            <input type="radio" name="radio" id="radio3" value="3" class="form__input">
-          <label for="radio4" class="form__label form__label_inline">4</label>
-            <input type="radio" name="radio" id="radio4" value="4" class="form__input">
-        </div>
-        <div class="form__row">
-          <label for="date" class="form__label">Datum</label>
-          <input type="date" name="date" id="date" class="form__input">
-        </div>
-        <div class="form__row">
-          <label for="Textarea" class="form__label">Textarea</label>
-            <Textarea cols="4" rows="8" id="Textarea"></Textarea>
-        </div>
-        <div class="form__row">
-          <label for="file1" class="form__label">Priloži datoteku</label>
-            <input type="file" name="file1" id="file1">
-        </div>
-        <div class="form__row">
-        <label for="cars">Odaberi seminar:</label>
-
-        <select name="cars" id="cars" class="form__label">
-          <option value="pariz">Pariz</option>
-          <option value="rim">Rim</option>
-          <option value="london">London</option>
-          <option value="zagreb">Zagreb</option>
-        </select>
-        </div>
-        <div class="form__row">
-          <label for="browsers" class="form__label">Odaberi browser:</label>
-            <input list="browsers">
-            <datalist id="browsers">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>
-        </div>
-        <button>Pošalji</button>
-      </form>
-      <audio controls>
-        <source src="./zidareva_ljubav.mp3" type="audio/ogg">
-        <source src="./zidareva_ljubav.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
+        <hr>
+        <table><caption>CJENIK PARKINGA NA DAN 09.12.2022.</caption>
+        <thead><tr><th>Dana</th><th>Cijena</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1. dan</td>
+            <td>100 EUR</td>
+          </tr>
+          <tr>
+            <td>2. dan</td>
+            <td>500 EUR</td>
+          </tr>
+          <tr>
+            <td>3. dan</td>
+            <td>1500 EUR</td>
+          </tr>
+          <tr>
+            <td>4.dan</td>
+            <td>2000 EUR</td>
+          </tr>
+          <tr>
+            <td>5. dan</td>
+            <td>2500 EUR</td>
+          </tr>
+          <tr><td colspan="2">
+            Svaki dodatni dan naplaćuje se 1000 EUR
+          </td></tr>
+        </tbody>
+        </table>
+      </section>
+      <section class="section3">
+        <h2>Kontakt</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore ipsum blanditiis pariatur vel dolorum rerum, eaque maiores tenetur nesciunt consequuntur ipsam nam, ducimus quos obcaecati harum? Deserunt, commodi blanditiis?
+        </p>
+        <form action="somescript.php" method="post">
+          <label for="preziimeime">Ime i prezime</label>
+          <input type="text" name="prezimeime" id="prezimeime" required>
+          <label for="mejl">Email</label>
+          <input type="email" name="mejl" id="mejl" required>
+          <label for="godina">Godina rođenja</label>
+          <select name="godina" id="godina">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+          </select>
+          <label for="sadrzaj">Sadržaj</label>
+          <textarea name="sadrzaj" id="sadrzaj" cols="30" rows="10" required></textarea>
+          <button class="form__button">Pošalji</button>
+        </form>
+      </section>
     </main>
     <footer>
-
+      <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </nav>
+    <div>Copyright &#169; 2022.</div>
     </footer>
     <script src="skripta.js"></script>
   </body>

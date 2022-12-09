@@ -1,70 +1,78 @@
-.header {
-    background: #555555;
-  }
-  
-  .header__inner {
-    width: 930px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header__figure {
-    width: 200px;
-    height: 80px;
-  }
-  
-  .header__img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  .header__nav {
-    display: flex;
-    color: #ffffff;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  .header__link {
-    margin-right: 48px;
-  }
-  
-  .header__link:last-child {
-    margin-right: 0;
-  }
-body{
-  background: #555555;
-}
-  form{
-    max-width: 400px;
-    background: rgb(175, 239, 239);
-    color: #030303;
-    padding:16px;
-    border: 9px solid rgb(245, 24, 24);
-    border-radius:12px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .form__row{
-    margin-bottom: 24px;
-    width: 100%;
-    padding-left: 80px;;
-  }
-  .form__row>*{
 
+body{
+  background: #e2d5d5;margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form > *{
+  display: block;
+  margin-bottom: 10px;
+}
+  header, footer{
+    background: #ffffff;
+    color:red;
+    padding:14px;
   }
-  .form__input{
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   border-bottom: 3px solid red;
+  header > nav >li > a{
+  font-size:28px;
+  margin-left: 20px;;
+  
   }
-  .form__label{
-    display: block;
-  }
-  .form__label_inline{
-    display:inline;
-  }
+  footer > nav >li > a{
+    font-size:28px;
+    margin-left: 20px;;
+    
+    }
+  header > nav > li{
+    display: inline-block;
+    
+    }
+    footer > nav > li{
+      display: inline-block;
+      
+      }
+    footer > div, footer > nav{
+      display: inline-block;
+      }
+      footer> div{
+        margin-left: 50%;
+
+      }
+      footer{
+        bottom:0px;
+      }
+    body > * {
+      margin-left: 80px;
+      margin-right:80px;
+    }
+    .section1{
+      background: #c7baf8;
+    }
+    .section2{
+      background: #f0b5b5;
+    }
+    .section3{
+      background: #dcf8e8;
+    }
+    .form__button{
+      padding:8px 10px;
+      background: green;
+      color: white;
+    }
+    section{
+      padding:10px;
+    }
+    h1{
+      font-size:42px;
+    }
+    table{
+      border-collapse: collapse;
+
+    }
+    table td, table th{
+      border:1px solid darkblue;
+      padding:10px;
+      text-align: center;
+    }
+   table caption{
+    color:white;
+   }
