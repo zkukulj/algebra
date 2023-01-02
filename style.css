@@ -1,23 +1,23 @@
 
     body {
       background: #e2d5d5;margin:0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       height:100vh;
     }
     form > * {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
-    header, footer{
+    header, footer {
       background: #ffffff;
       color:red;
       padding:14px;
     }
-    header > nav >li > a{
+    header > nav >li > a {
     font-size:28px;
     margin-left: 20px;;
     }
-    footer > nav >li > a{
+    footer > nav >li > a {
       font-size:28px;
       margin-left: 20px;;
       
@@ -26,18 +26,13 @@
     display: inline-block;
     }
     footer > nav > li{
-      display: inline-block;
-      
+      display: inline-block;     
     }
-    footer > div, footer > nav{
+    footer > div, footer > nav {
       display: inline-block;
     }
     footer> div {
         margin-left: 50%;
-
-    }
-    footer {
-        
     }
     body > * {
       margin-left: 80px;
@@ -61,7 +56,7 @@
       padding:6px;
     }
     h1 {
-      font-size:42px;
+      font-size:36px;
       margin-bottom: 6px;
       margin-top: 6px;
     }
